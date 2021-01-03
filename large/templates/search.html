@@ -1,0 +1,9 @@
+${navLayout}
+<div class="container">
+<ul>
+
+ 
+    ${notes.length > 0 ? notes.map(n=> `<li><a href="/members-only/note/${n.id}">${n.title}</a></li>`).join("") : ` No notes found`}
+</ul>
+</div>
+${foot}

@@ -1,0 +1,20 @@
+${navLayout}
+
+<div class="container">
+  <form method="POST" action="/members-only/add-note">
+    <div class="mb-3">
+      <label for="noteTitle" class="form-label">Note Title</label>
+      <input name="title" type="text" class="form-control" id="noteTitle" aria-describedby="newNoteTitle">
+      <div id="emailHelp" class="form-text"></div>
+    </div>
+    <div class="mb-3">
+      <label for="noteContent" class="form-label">Note</label>
+      <textarea cols=10 rows=10 name="content" class="form-control" id="noteContent"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+${foot}
+
+

@@ -1,0 +1,10 @@
+${navLayout}
+
+<h1>Welcome, ${username}</h1>
+
+
+<ul>
+    ${notes.length > 0 ? notes.map(n=> `<li><a href="note/${n.id}">${n.title}</a></li>`).join("") : ` No notes yet`}
+</ul>
+
+${foot}

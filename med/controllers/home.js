@@ -3,7 +3,7 @@ const {
 } = require('../utils')
 
 const home = (req, res) => {
-    res.render("index", {
+    res.render("index",  {
         ...layout,
         locals: {
             title: "Home Page",
